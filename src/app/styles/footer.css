@@ -1,0 +1,95 @@
+ /* footer */
+ .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter p {
+    margin: 10px 0;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin-top: 10px;
+  }
+  
+  .newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 40px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  .footer-contact p,
+  .footer-contact small {
+    margin-bottom: 8px;
+  }
+  
+  .footer-follow .social-icons span {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .footer-follow .payments img {
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-columns {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .newsletter-form {
+      flex-direction: column;
+    }
+  
+    .newsletter-form input,
+    .newsletter-form button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
