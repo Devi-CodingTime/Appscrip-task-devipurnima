@@ -11,10 +11,16 @@
       background-color: #f9f9f9;
       color: #333;
     }
+    /* .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    } */
     .main-content {
       display: flex;
-      /* flex-direction: column; */
-      align-items: center;
+      align-items: stretch; /* Ensures both children have equal height */
+      gap: 20px;
       padding: 20px;
     }
 

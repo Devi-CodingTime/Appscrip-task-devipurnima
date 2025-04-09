@@ -19,7 +19,7 @@ const Header = () => {
           <li><span role="img" aria-label="wishlist">🤍</span></li>
           <li><span role="img" aria-label="cart">👜</span></li>
           <li><span role="img" aria-label="user">👤</span></li>
-          <li>ENG ⌄</li>
+          <li>ENG</li>
         </ul>
       </div>
 

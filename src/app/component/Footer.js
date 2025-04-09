@@ -1,33 +1,37 @@
 // components/Footer.js
+
 import React from 'react';
-import '../styles/footer.css'; // Assuming you have a CSS file for styling
+import '../styles/footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="newsletter">
-        <h4>BE THE FIRST TO KNOW</h4>
-        <p>Sign up for updates from mettā muse.</p>
-        <form className="newsletter-form">
-          <input type="email" placeholder="Enter your e-mail..." />
-          <button type="submit">SUBSCRIBE</button>
-        </form>
-      </div>
-
-      <div className="footer-columns">
-        <div className="footer-contact">
+      {/* Top Subscription & Contact */}
+      <div className="footer-top">
+        <div className="subscribe">
+          <h4>BE THE FIRST TO KNOW</h4>
+          <p>Sign up for updates from mettā muse.</p>
+          <div className="subscribe-form">
+            <input type="email" placeholder="Enter your e-mail..." />
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+        <div className="contact">
           <h4>CONTACT US</h4>
           <p>+44 221 133 5360</p>
           <p>customercare@mettamuse.com</p>
+
           <h4>CURRENCY</h4>
           <p>🇺🇸 • USD</p>
-          <small>
-            Transactions will be completed in Euros and a currency reference is
-            available on hover.
-          </small>
+          <small>Transactions will be completed in Euros and a currency reference is available on hover.</small>
         </div>
+      </div>
 
-        <div className="footer-links">
+      <hr />
+
+      {/* Bottom Footer Links */}
+      <div className="footer-bottom">
+        <div className="footer-col">
           <h4>mettā muse</h4>
           <ul>
             <li>About Us</li>
@@ -38,8 +42,7 @@ const Footer = () => {
             <li>EU Compliances Docs</li>
           </ul>
         </div>
-
-        <div className="footer-links">
+        <div className="footer-col">
           <h4>QUICK LINKS</h4>
           <ul>
             <li>Orders & Shipping</li>
@@ -51,26 +54,26 @@ const Footer = () => {
             <li>Terms & Conditions</li>
           </ul>
         </div>
-
-        <div className="footer-follow">
+        <div className="footer-col">
           <h4>FOLLOW US</h4>
           <div className="social-icons">
             <span>📷</span>
             <span>🔗</span>
           </div>
           <h4>mettā muse ACCEPTS</h4>
-          <div className="payments">
-            <img src="/images/gpay.png" alt="Google Pay" />
-            <img src="/images/mastercard.png" alt="Mastercard" />
-            <img src="/images/paypal.png" alt="PayPal" />
-            <img src="/images/amex.png" alt="American Express" />
-            <img src="/images/applepay.png" alt="Apple Pay" />
-            <img src="/images/stripe.png" alt="Stripe" />
+          <div className="payment-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Google_Pay_Logo.svg" alt="Google Pay" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="Amex" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Google_Pay_Logo.svg" alt="GPay" />
           </div>
         </div>
       </div>
 
-      <div className="footer-bottom">
+      {/* Footer Note */}
+      <div className="footer-note">
         <p>Copyright © 2023 mettamuse. All rights reserved.</p>
       </div>
     </footer>

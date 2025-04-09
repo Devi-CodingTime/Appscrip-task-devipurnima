@@ -1,9 +1,15 @@
-.sidebar {
+/* .sidebar {
     width: 240px;
     padding: 20px;
     border-right: 1px solid #ddd;
     font-family: Arial, sans-serif;
     font-size: 14px;
+  } */
+  .sidebar {
+    flex: 1; /* Sidebar takes up equal space */
+    max-width: 240px; /* Optional: Set a max width for the sidebar */
+    background-color: #fff;
+    border-right: 1px solid #ddd;
   }
   .sidebar label {
     font-weight: bold;

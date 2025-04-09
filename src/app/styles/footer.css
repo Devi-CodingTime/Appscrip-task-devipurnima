@@ -1,95 +1,95 @@
  /* footer */
- .footer {
+ 
+
+  .footer {
     background-color: #000;
-    color: #fff;
-    padding: 40px 20px;
+    color: white;
+    padding: 40px 30px;
     font-family: Arial, sans-serif;
+    font-size: 14px;
   }
   
   .footer h4 {
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  .newsletter p {
-    margin: 10px 0;
+  .footer p, .footer li, .footer small {
+    font-size: 13px;
+    color: #ccc;
+    margin: 6px 0;
   }
   
-  .newsletter-form {
-    display: flex;
-    max-width: 500px;
-    margin-top: 10px;
-  }
-  
-  .newsletter-form input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    font-size: 14px;
-  }
-  
-  .newsletter-form button {
-    padding: 10px 20px;
-    background: none;
-    border: 1px solid #fff;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .footer-columns {
+  .footer-top {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 30px;
   }
   
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
+  .subscribe-form {
+    display: flex;
+    margin-top: 10px;
   }
   
-  .footer-links li {
-    margin-bottom: 8px;
+  .subscribe-form input {
+    padding: 10px;
+    flex: 1;
+    border: none;
+    outline: none;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 16px;
+    background: #222;
+    color: white;
+    border: 1px solid #444;
     cursor: pointer;
   }
   
-  .footer-contact p,
-  .footer-contact small {
-    margin-bottom: 8px;
-  }
-  
-  .footer-follow .social-icons span {
-    margin-right: 10px;
-    font-size: 20px;
-  }
-  
-  .footer-follow .payments img {
-    width: 40px;
-    margin-right: 10px;
-    margin-top: 10px;
+  .footer hr {
+    margin: 40px 0 20px;
+    border: 0.5px solid #333;
   }
   
   .footer-bottom {
-    border-top: 1px solid #333;
-    margin-top: 30px;
-    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footer-col {
+    min-width: 180px;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons span {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .payment-icons img {
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: white;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .footer-note {
+    margin-top: 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
+    color: #888;
   }
   
-  @media screen and (max-width: 768px) {
-    .footer-columns {
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    .newsletter-form {
-      flex-direction: column;
-    }
-  
-    .newsletter-form input,
-    .newsletter-form button {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  }
