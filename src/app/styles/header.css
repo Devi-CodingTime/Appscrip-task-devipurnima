@@ -61,21 +61,21 @@
   }
   
   @media screen and (max-width: 768px) {
-    .nav-links ul {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
+    .header {
+      flex-direction: row; /* Align header sections in a row */
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 16px; /* Adjust padding for mobile view */
     }
   
     .header-left,
     .header-right {
       position: static;
-      justify-content: space-between;
-      width: 100%;
+      justify-content: center; /* Center align icons */
+      width: auto; /* Remove width constraints */
     }
   
-    .header {
-      padding: 16px 10px;
+    .nav-links {
+      display: none; /* Hide navigation links on mobile */
     }
   }
-  
